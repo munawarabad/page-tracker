@@ -17,7 +17,7 @@ def index():
     else:
         return f"This page has been seen {page_views} times."
 
-# comment to triiger push -- remove
+
 @cache
 def redis():
     return Redis.from_url(os.getenv("REDIS_URL", "redis://localhost:6379"))
